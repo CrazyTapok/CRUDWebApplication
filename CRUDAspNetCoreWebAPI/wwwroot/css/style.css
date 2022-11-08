@@ -1,0 +1,308 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+
+.content {
+    width: 100%;
+}
+
+.container h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #030235;
+    text-align: center;
+    margin: 45px;
+}
+
+.content-btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 15px 0;
+    align-items: center;
+}
+
+.content-btn button{
+    padding: 6px;
+    background-color: #030235;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #030235;
+    border-radius: 5px;
+}
+
+.content-btn ion-icon {
+    font-size: 20px;
+}
+
+.table {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+    
+
+.table thead th {
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    background: #d8d8d8;
+    font-size: 18px;
+}
+
+.table tbody ion-icon {
+    font-size: 18px
+
+}
+
+
+.table thead tr th:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+    
+.table thead tr th:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+    
+.table tbody td {
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    vertical-align: top;
+}
+
+.table tbody tr:nth-child(even) {
+    background: #f3f3f3;
+}
+    
+.table tbody tr td:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+    
+.table tbody tr td:last-child {
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px
+}
+
+.table tbody tr td:last-child button {
+    padding: 6px;
+    background-color: #030235;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #030235;
+    border-radius: 5px;
+}
+
+.table tbody tr td:last-child button:last-of-type {
+   border: 2px solid rgb(218, 29, 29);
+   background-color: rgb(218, 29, 29);
+}
+
+
+.content-btn button:hover,
+.table tbody tr td:last-child button:hover, 
+.form-buttons button:hover{
+    background-color: #fff;
+    color: #030235; 
+}
+
+
+.table tbody tr td:last-child button:last-of-type:hover,
+.form-buttons .reset-btn:hover{
+     background-color: #fff;
+     color: rgb(218, 29, 29);
+}
+
+
+[hidden] {
+    display: none !important;
+}
+
+.modal {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px 30px 30px 30px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 25%;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    color: #030235;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal form input{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+    outline: none;
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #98A0AD;
+}
+
+.modal form div:not(div:last-of-type) {
+    padding-bottom: 20px;
+}
+
+
+.modal form b{
+    padding-left: 7px;
+    color: #030235;
+}
+
+.modal form span{
+    color: red;
+}
+
+.form-buttons{
+    margin-top: 20px;
+}
+
+.form-buttons button{
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: 3px solid #030235;
+    background: #030235;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form-buttons .reset-btn{
+    border: 3px solid rgb(218, 29, 29);
+    background-color: rgb(218, 29, 29);
+}
+
+.modal form .focus {
+    border: 1px solid #030235;
+}
+
+.modal form .error {
+    border: 1px solid rgb(218, 29, 29);
+    animation: shake 300ms;
+}
+
+
+.modal form .errorMessage {
+    padding-left: 7px;
+    color: rgb(218, 29, 29)
+}
+
+@keyframes shake {
+    25% {
+        transform: translateX(4px);
+    }
+
+    50% {
+        transform: translateX(-4px);
+    }
+
+    75% {
+        transform: translateX(4px);
+    }
+}
+
+.loader_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 5px 8px 0;
+    background: repeating-linear-gradient(90deg, currentColor 0 8%, #030235 0 10%) 200% 100%/200% 3px no-repeat;
+    animation: classic 2s steps(6) infinite;
+}
+
+@keyframes classic {
+    to {
+        background-position: 80% 100%;
+    }
+}
+
+
+@media screen and (max-width: 1290px) {
+    .modal-content {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .container {
+        width: 85%;
+    }
+
+    .modal-content {
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        width: 95%;
+    }
+
+    .modal-content {
+        width: 53%;
+    }
+}

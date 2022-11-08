@@ -9,4 +9,11 @@ Basic properties of a Contact:
 
 The project included the following technologies:
 
-1. ASP.Net Core API2. Entity Framework (EF) Core 3. n-layer architecture 4. Single-page application5. Using the Fetch API 6. CRUD operations with server 7. Generating HTML content based on JavaScript 8. Forms & validations
+1. ASP.Net Core API 
+2. Entity Framework (EF) Core 
+3. n-layer architecture 
+4. Single-page application 
+5. Using the Fetch API 
+6. CRUD operations with server 
+7. Generating HTML content based on JavaScript 
+8. Forms & validations
